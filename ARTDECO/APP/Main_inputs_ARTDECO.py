@@ -129,7 +129,7 @@ min_wvl = 0.350
 max_wvl = 0.408
 lat_place = 41.38
 lon_place = 2.11
-BACKGROUND_PATH = "006_Tibidabo.png"
+BACKGROUND_PATH = "006_Tibidabo.jpg"
 LOGO_PATH = "EETAC.png"
 
 # GUI Setup
