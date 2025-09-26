@@ -1,0 +1,10 @@
+#
+# Surface albedo : white
+#
+# Number of sampled values :
+ 2
+# wavelength        albedo
+#  (microns)
+   0.20             0.999999999999
+   40.0             0.999999999999
+ 

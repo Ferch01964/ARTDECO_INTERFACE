@@ -1,0 +1,16 @@
+# model: Midlatitude summer mc clatchey  
+#
+# number of altitude
+ 2
+# number of sampled gas :
+ 2 
+# sampled gas :
+ h2o 
+ o3 
+#   z (km)        P(z) (mb)        T(z) (K)      air (cm-3)     H2O (cm-3)      o3 (cm-3) 
+   100.00        3.000e-04         275.20        0.00000000      0.00000000      0.00000000
+     0.00        1.037630E+03      281.70        0.00000000      0.00000000      0.00000000 
+
+
+
+

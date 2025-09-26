@@ -1,0 +1,11 @@
+#
+# Surface albedo : black
+#
+# Number of sampled values :
+ 2
+# wavelength        albedo
+#  (microns)
+   0.20             0.0
+   40.0             0.0
+
+ 

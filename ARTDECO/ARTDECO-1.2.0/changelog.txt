@@ -1,0 +1,5 @@
+#modification: 1.1.2 -> 1.2.0
+#date: 13/01/2020
+- Minor update to support python3.7
+- Bug Fix to use BRDF in python interface
+- Artdeco is still compatible to python2.7 but now supports python3.7

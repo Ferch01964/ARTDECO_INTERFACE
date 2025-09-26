@@ -1,0 +1,10 @@
+# day atmospheric constituent profile.
+# 
+# number of sampled altitude :
+40
+# number of sampled gas :
+2
+# sampled gas :
+H2O 
+O3 
+#HGT [km] PRE [mb] TEM [K]  H2O [ppmv]  O3 [ppmv]

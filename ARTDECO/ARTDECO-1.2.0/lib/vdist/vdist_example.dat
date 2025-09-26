@@ -1,0 +1,13 @@
+# 
+# The name of the file should be vdist_<name_of_the_particle>.dat
+#  Altitude distribution of particles 
+# 
+# number of altitude sampled :
+  5
+# 
+#    Alt (km)    concentration (arbitrary unit) 
+1.2e+02 0.0e+00
+2.001 0.0
+1.50000e+00     1.00000e+00
+0.999 0.0
+0.0e+00 0.0e+00

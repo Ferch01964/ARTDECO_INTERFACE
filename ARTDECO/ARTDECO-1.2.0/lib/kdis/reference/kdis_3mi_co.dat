@@ -1,0 +1,99 @@
+#
+# This file contains parameters to treat the gas absorption 
+# using the correlated-k distribution technique 
+# The format is specific to the ARTDECO tools : 
+# 
+# You must find such a file for each absorbing specy (kdis_root_specy.dat). 
+# (e.g. root=kato, specy=h2o) 
+# The bands definition together with the sampled pressure, temperature 
+# and eventually the concentration (for water vapor) 
+# are given in a separated file named kdis_root_def.dat 
+# (root being the same than for this file). 
+# NOTE : the sample grid of temperature, pressure and concentration must
+#        then be the same for all kdis_root_specy.dat files. 
+# 
+# The format for this current file is the following : 
+# 
+# First, for each band you find the number of quadrature points
+# and the cross-section.  
+# 
+#  band,   nai,   xsect 
+#    .      .       .  
+#    .      .       . 
+#    .      .       . 
+# 
+# NOTE 1 :
+# nai = 1 
+#        for continuum absorption 
+#        xsect is given 
+# nai > 1 
+#        for non-gray absorption 
+#        xsect = -1, (ai,ki) are given further in the file  
+# 
+# NOTE 2 : All cross-sections are given in cm2.
+# 
+# Then for each band with nai > 1, you find 
+# the weight for the quadrature (ai) and the cross-section ki 
+# in the following format: 
+# 
+# CASE 1 : no concentration dependency: 
+# band # 
+#    a1     ,     a2    ,     a3    , ... ,     ai 
+# k1(P1, T1), k2(P1, T1), k3(P1, T1), ... , ki(P1, T1) 
+# k1(P2, T1), k2(P2, T1), k3(P2, T1), ... , ki(P2, T1) 
+# k1(P3, T1), k2(P3, T1), k3(P3, T1), ... , ki(P3, T1)
+#     .           .          .         .        . 
+#     .           .          .         .        . 
+#     .           .          .         .        . 
+# k1(Pk, T1), k2(Pk, T1), k3(Pk, T1), ... , ki(Pk, T1)
+# k1(P1, T2), k2(P1, T2), k3(P1, T2), ... , ki(P1, T2)
+# k1(P2, T2), k2(P2, T2), k3(P2, T2), ... , ki(P2, T2)
+# k1(P3, T2), k2(P3, T2), k3(P3, T2), ... , ki(P3, T2)
+#     .           .          .         .        . 
+#     .           .          .         .        . 
+#     .           .          .         .        . 
+# k1(Pk, Tj), k2(Pk, Tj), k3(Pk, Tj), ... , ki(Pk, Tj) 
+# 
+# CASE 2 : concentration dependency: 
+# band # 
+#    a1     ,     a2    ,     a3    , ... ,     ai 
+# k1(P1,T1,C1), k2(P1,T1,C1), k3(P1,T1,C1), ... , ki(P1,T1,C1) 
+# k1(P2,T1,C1), k2(P2,T1,C1), k3(P2,T1,C1), ... , ki(P2,T1,C1) 
+# k1(P3,T1,C1), k2(P3,T1,C1), k3(P3,T1,C1), ... , ki(P3,T1,C1) 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+# k1(Pk,T1,C1), k2(Pk,T1,C1), k3(Pk,T1,C1), ... , ki(Pk,T1,C1) 
+# k1(P1,T2,C1), k2(P1,T2,C1), k3(P1,T2,C1), ... , ki(P1,T2,C1) 
+# k1(P2,T2,C1), k2(P2,T2,C1), k3(P2,T2,C1), ... , ki(P2,T2,C1) 
+# k1(P3,T2,C1), k2(P3,T2,C1), k3(P3,T2,C1), ... , ki(P3,T2,C1) 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+# k1(Pk,Tj,C1), k2(Pk,Tj,C1), k3(Pk,Tj,C1), ... , ki(Pk,Tj,C1) 
+# k1(P1,T1,C2), k2(P1,T1,C2), k3(P1,T1,C2), ... , ki(P1,T1,C2) 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+# k1(Pk,Tj,Cu), k2(Pk,Tj,Cu), k3(Pk,Tj,Cu), ... , ki(Pk,Tj,Cu) 
+# 
+# NOTE : To store multi-dimension arrays in ASCII format is indeed 
+#        a bit heavy but allows ARTDECO to have minimum dependencies 
+#        (e.g. netCDF libraries).
+# 
+# 
+# band, nai, xsect (cm2) 
+  1     1    0.000000
+  2     1    0.000000
+  3     1    0.000000
+  4     1    0.000000
+  5     1    0.000000
+  6     1    0.000000
+  7     1    0.000000
+  8     1    0.000000
+  9     1    0.000000
+ 10     1    0.000000
+ 11     1    0.000000
+ 12     1    0.000000
+ 13     1    0.000000
+  

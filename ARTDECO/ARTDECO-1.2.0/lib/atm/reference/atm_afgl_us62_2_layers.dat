@@ -1,0 +1,12 @@
+# AFGL atmospheric constituent profile. U.S. standard atmosphere 1976. ( AFGL-TR-86-0110)       
+# 
+# number of sampled altitude :
+ 2
+# number of sampled gas :
+ 2 
+# sampled gas :
+ h2o 
+ o3 
+#      z(km)      p(mb)        T(K)       air(cm-3)       h2o(cm-3)        o3(cm-3) 
+      50.00    8.0000e-01    270.70    2.1346050e+16    1.1160600e+11    6.6216000e+10
+       0.00    1.0130e+03    288.20    2.5458180e+19    1.9734260e+17    6.7776800e+11

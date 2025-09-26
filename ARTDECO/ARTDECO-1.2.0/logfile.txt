@@ -1,0 +1,10 @@
+
+
+###########
+##
+## CONFIGURATION ERROR
+##    |
+##    |_ particles.py : Problem with particle list. The particle "aerosol_lw_aeronet" appears more that once.
+##                      
+##
+###########

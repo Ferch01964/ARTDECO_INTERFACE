@@ -1,0 +1,21 @@
+# 
+ # ARTDECO : File containig properties for new particles (aerosols or hygrosols)  
+ # needed to obtain optical properties (file opt_*.dat) 
+ # 
+ # Material 
+ iwat 
+ # optical model 
+ rhm 
+ # Number of "photons" for the simulation 
+  10000000 
+ #################################################### 
+ # Caracteristics of hexagonal monocrystal 
+ # 
+ # length of the particle (microns) 
+ 137.147 
+ # radius of the circumscribed circle related to the hexagonal face (microns) 
+ 27.4290 
+ # Tilt angle 
+ 15.00 
+  
+ 

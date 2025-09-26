@@ -1,0 +1,60 @@
+###############################################################
+#  K-distribution characterization file to be used in ARTDECO
+################################################################
+#          
+# Maximum encounter number of (ai,ki) over the different bands and species (this will serve as an array dimension)
+  15
+#################################
+# Number of gas species
+   3
+# gas species    concentration dependency (0/1)            add continuum  
+        h2o              0               continuum_flag
+        o3               0               continuum_flag
+        o2               0               continuum_flag
+#################################
+#      WAVELENGTH BANDS
+# number of bands :
+  1
+# band  center, min, max wavelengths (microns)
+  1    0.765000    0.745000    0.785000
+#################################
+#        PRESSURE 
+# number of sampled pressure :
+  23
+# sampled pressures (mb) :
+   0.01
+   0.07
+   0.25
+   0.40
+   0.63
+   1.00
+   1.58
+   2.51
+   3.98
+   6.31
+  10.00
+  15.80
+  25.10
+  39.80
+  63.10
+ 100.00
+ 158.00
+ 251.00
+ 398.00
+ 487.00
+ 631.00
+ 802.00
+1050.00
+#################################
+#        TEMPERATURE 
+# number of sampled temperature :
+   7
+# sampled tenperatures (K) :
+ 190.00
+ 191.00
+ 225.00
+ 260.00
+ 295.00
+ 329.00
+ 330.00
+  

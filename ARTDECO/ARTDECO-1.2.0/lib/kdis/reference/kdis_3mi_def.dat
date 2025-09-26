@@ -1,0 +1,76 @@
+###############################################################
+#  K-distribution characterization file to be used in ARTDECO
+################################################################
+#          
+# Maximum encounter number of (ai,ki) over the different bands and species (this will serve as an array dimension)
+  15
+#################################
+# Number of gas species
+   4
+# gas species    concentration dependency (0/1)            add continuum  
+       h2o               0               continuum_flag
+       co2               0               continuum_flag
+        o3               0               continuum_flag
+        o2               0               continuum_flag
+#        co               0               continuum_flag
+#       ch4               0               continuum_flag
+#       n2o               0               continuum_flag
+#################################
+#      WAVELENGTH BANDS
+# number of bands :
+  13
+# band  center, min, max wavelengths (microns)
+  1    0.410000    0.400000    0.420000
+  2    0.443000    0.433000    0.453000
+  3    0.490000    0.480000    0.500000
+  4    0.555000    0.545000    0.565000
+  5    0.670000    0.660000    0.680000
+  6    0.754000    0.744000    0.764000
+  7    0.763000    0.758000    0.768000
+  8    0.765000    0.745000    0.785000
+  9    0.865000    0.845000    0.885000
+ 10    0.910000    0.900000    0.920000
+ 11    1.370000    1.350000    1.390000
+ 12    1.650000    1.630000    1.670000
+ 13    2.130000    2.110000    2.150000
+#################################
+#        PRESSURE 
+# number of sampled pressure :
+  23
+# sampled pressures (mb) :
+   0.01
+   0.07
+   0.25
+   0.40
+   0.63
+   1.00
+   1.58
+   2.51
+   3.98
+   6.31
+  10.00
+  15.80
+  25.10
+  39.80
+  63.10
+ 100.00
+ 158.00
+ 251.00
+ 398.00
+ 487.00
+ 631.00
+ 802.00
+1050.00
+#################################
+#        TEMPERATURE 
+# number of sampled temperature :
+   7
+# sampled tenperatures (K) :
+ 190.00
+ 191.00
+ 225.00
+ 260.00
+ 295.00
+ 329.00
+ 330.00
+  

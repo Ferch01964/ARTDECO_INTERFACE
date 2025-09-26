@@ -1,0 +1,293 @@
+#
+# This file contains parameters to treat the gas absorption 
+# using the correlated-k distribution technique 
+# The format is specific to the ARTDECO tools : 
+# 
+# You must find such a file for each absorbing specy (kdis_root_specy.dat). 
+# (e.g. root=kato, specy=h2o) 
+# The bands definition together with the sampled pressure, temperature 
+# and eventually the concentration (for water vapor) 
+# are given in a separated file named kdis_root_def.dat 
+# (root being the same than for this file). 
+# NOTE : the sample grid of temperature, pressure and concentration must
+#        then be the same for all kdis_root_specy.dat files. 
+# 
+# The format for this current file is the following : 
+# 
+# First, for each band you find the number of quadrature points
+# and the cross-section.  
+# 
+#  band,   nai,   xsect 
+#    .      .       .  
+#    .      .       . 
+#    .      .       . 
+# 
+# NOTE 1 :
+# nai = 1 
+#        for continuum absorption 
+#        xsect is given 
+# nai > 1 
+#        for non-gray absorption 
+#        xsect = -1, (ai,ki) are given further in the file  
+# 
+# NOTE 2 : All cross-sections are given in cm2.
+# 
+# Then for each band with nai > 1, you find 
+# the weight for the quadrature (ai) and the cross-section ki 
+# in the following format: 
+# 
+# CASE 1 : no concentration dependency: 
+# band # 
+#    a1     ,     a2    ,     a3    , ... ,     ai 
+# k1(P1, T1), k2(P1, T1), k3(P1, T1), ... , ki(P1, T1) 
+# k1(P2, T1), k2(P2, T1), k3(P2, T1), ... , ki(P2, T1) 
+# k1(P3, T1), k2(P3, T1), k3(P3, T1), ... , ki(P3, T1)
+#     .           .          .         .        . 
+#     .           .          .         .        . 
+#     .           .          .         .        . 
+# k1(Pk, T1), k2(Pk, T1), k3(Pk, T1), ... , ki(Pk, T1)
+# k1(P1, T2), k2(P1, T2), k3(P1, T2), ... , ki(P1, T2)
+# k1(P2, T2), k2(P2, T2), k3(P2, T2), ... , ki(P2, T2)
+# k1(P3, T2), k2(P3, T2), k3(P3, T2), ... , ki(P3, T2)
+#     .           .          .         .        . 
+#     .           .          .         .        . 
+#     .           .          .         .        . 
+# k1(Pk, Tj), k2(Pk, Tj), k3(Pk, Tj), ... , ki(Pk, Tj) 
+# 
+# CASE 2 : concentration dependency: 
+# band # 
+#    a1     ,     a2    ,     a3    , ... ,     ai 
+# k1(P1,T1,C1), k2(P1,T1,C1), k3(P1,T1,C1), ... , ki(P1,T1,C1) 
+# k1(P2,T1,C1), k2(P2,T1,C1), k3(P2,T1,C1), ... , ki(P2,T1,C1) 
+# k1(P3,T1,C1), k2(P3,T1,C1), k3(P3,T1,C1), ... , ki(P3,T1,C1) 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+# k1(Pk,T1,C1), k2(Pk,T1,C1), k3(Pk,T1,C1), ... , ki(Pk,T1,C1) 
+# k1(P1,T2,C1), k2(P1,T2,C1), k3(P1,T2,C1), ... , ki(P1,T2,C1) 
+# k1(P2,T2,C1), k2(P2,T2,C1), k3(P2,T2,C1), ... , ki(P2,T2,C1) 
+# k1(P3,T2,C1), k2(P3,T2,C1), k3(P3,T2,C1), ... , ki(P3,T2,C1) 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+# k1(Pk,Tj,C1), k2(Pk,Tj,C1), k3(Pk,Tj,C1), ... , ki(Pk,Tj,C1) 
+# k1(P1,T1,C2), k2(P1,T1,C2), k3(P1,T1,C2), ... , ki(P1,T1,C2) 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+#      .             .              .        .         . 
+# k1(Pk,Tj,Cu), k2(Pk,Tj,Cu), k3(Pk,Tj,Cu), ... , ki(Pk,Tj,Cu) 
+# 
+# NOTE : To store multi-dimension arrays in ASCII format is indeed 
+#        a bit heavy but allows ARTDECO to have minimum dependencies 
+#        (e.g. netCDF libraries).
+# 
+# 
+# band, nai, xsect (cm2) 
+  1     1    0.000000
+  2     1    0.000000
+  3     1    0.000000
+  4     1    0.000000
+  5     1    0.000000
+  6     1    0.000000
+  7     1    0.000000
+  8     1    0.000000
+  9     1    0.000000
+ 10     1    0.000000
+ 11     1    0.000000
+ 12     1    0.000000
+ 13     1    0.000000
+ 14     1    0.000000
+ 15     1    0.000000
+ 16     1    0.000000
+ 17     1    0.000000
+ 18     1    0.000000
+ 19     1    0.000000
+ 20     1    0.000000
+ 21     1    0.000000
+ 22     1    0.000000
+ 23     1    0.000000
+ 24     1    0.000000
+ 25     1    0.000000
+ 26     1    0.000000
+ 27     1    0.000000
+ 28     1    0.000000
+ 29     1    0.000000
+ 30     1    0.000000
+ 31     1    0.000000
+ 32     1    0.000000
+ 33     1    0.000000
+ 34     1    0.000000
+ 35     1    0.000000
+ 36     1    0.000000
+ 37     1    0.000000
+ 38     1    0.000000
+ 39     1    0.000000
+ 40     1    0.000000
+ 41     1    0.000000
+ 42     1    0.000000
+ 43     1    0.000000
+ 44     1    0.000000
+ 45     1    0.000000
+ 46     1    0.000000
+ 47     1    0.000000
+ 48     1    0.000000
+ 49     1    0.000000
+ 50     1    0.000000
+ 51     1    0.000000
+ 52     1    0.000000
+ 53     1    0.000000
+ 54     1    0.000000
+ 55     1    0.000000
+ 56     1    0.000000
+ 57     1    0.000000
+ 58     1    0.000000
+ 59     1    0.000000
+ 60     1    0.000000
+ 61     1    0.000000
+ 62     1    0.000000
+ 63     1   0.0
+ 64     1   0.0
+ 65     1   0.0
+ 66     1   0.0
+ 67     1   0.0
+ 68     1   0.0
+ 69     1   0.0
+ 70     1   0.0
+ 71     1   0.0
+ 72     1   0.0
+ 73     1   0.0
+ 74     1   0.0
+ 75     1   0.0
+ 76     1   0.0
+ 77     1   0.0
+ 78     1   0.0
+ 79     1   0.0
+ 80     1   0.0
+ 81     1   0.0
+ 82     1   0.0
+ 83     1   0.0
+ 84     1   0.0
+ 85     1   0.0
+ 86     1   0.0
+ 87     1   0.0
+ 88     1   0.0
+ 89     1   0.0
+ 90     1   0.0
+ 91     1   0.0
+ 92     1   0.0
+ 93     1   0.0
+ 94     1   0.0
+ 95     1   0.0
+ 96     1   0.0
+ 97     1   0.0
+ 98     1   0.0
+ 99     1   0.0
+100     1   0.0
+101     1   0.0
+102     1   0.0
+103     1   0.0
+104     1   0.0
+105     1   0.0
+106     1   0.0
+107     1   0.0
+108     1   0.0
+109     1   0.0
+110     1   0.0
+111     1   0.0
+112     1   0.0
+113     1   0.0
+114     1   0.0
+115     1   0.0
+116     1   0.0
+117     1   0.0
+118     1   0.0
+119     1   0.0
+120     1   0.0
+121     1   0.0
+122     1   0.0
+123     1   0.0
+124     1   0.0
+125     1   0.0
+126     1   0.0
+127     1   0.0
+128     1   0.0
+129     1   0.0
+130     1   0.0
+131     1   0.0
+132     1   0.0
+133     1   0.0
+134     1   0.0
+135     1   0.0
+136     1   0.0
+137     1   0.0
+138     1   0.0
+139     1   0.0
+140     1   0.0
+141     1   0.0
+142     1   0.0
+143     1   0.0
+144     1   0.0
+145     1   0.0
+146     1   0.0
+147     1   0.0
+148     1   0.0
+149     1   0.0
+150     1   0.0
+151     1   0.0
+152     1   0.0
+153     1   0.0
+154     1   0.0
+155     1   0.0
+156     1   0.0
+157     1   0.0
+158     1   0.0
+159     1   0.0
+160     1   0.0
+161     1   0.0
+162     1   0.0
+163     1   0.0
+164     1   0.0
+165     1   0.0
+166     1   0.0
+167     1   0.0
+168     1   0.0
+169     1   0.0
+170     1   0.0
+171     1   0.0
+172     1   0.0
+173     1   0.0
+174     1   0.0
+175     1   0.0
+176     1   0.0
+177     1   0.0
+178     1   0.0
+179     1   0.0
+180     1   0.0
+181     1   0.0
+182     1   0.0
+183     1   0.0
+184     1   0.0
+185     1   0.0
+186     1   0.0
+187     1   0.0
+188     1   0.0
+189     1   0.0
+190     1   0.0
+191     1   0.0
+192     1   0.0
+193     1   0.0
+194     1   0.0
+195     1   0.0
+196     1   0.0
+197     1   0.0
+198     1   0.0
+199     1   0.0
+200     1   0.0
+201     1   0.0
+202     1   0.0
+203     1   0.0
+204     1   0.0
+205     1   0.0
+206     1   0.0
+207     1   0.0
+208     1   0.0

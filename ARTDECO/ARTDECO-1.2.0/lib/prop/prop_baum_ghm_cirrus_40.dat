@@ -1,0 +1,14 @@
+#
+# ARTDECO : File containig properties for new particles (aerosols or hygrosols) 
+# needed to obtain optical properties (file opt_*.dat)
+#
+# Material
+  unknown
+# optical model
+  baum
+#######################
+#  type  
+ ghm
+#  Effective diameter (microns)
+ 40.0
+

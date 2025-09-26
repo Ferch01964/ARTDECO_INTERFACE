@@ -1,0 +1,43 @@
+#
+# ARTDECO : File containig properties for new particles (aerosols or hygrosols) 
+# needed to obtain optical properties (file opt_*.dat)
+#
+# Material
+lwat
+# optical model
+mie3
+####################################################
+# INPUT FOR THE MEERHOFF MIE PROGRAM VERSION 3.0 size distribution
+# truncation of Mie sum  (delta)                 
+1.00E-12
+# cutoff value of the size distribution (cutoff)
+1.00E-06 
+# index size distribution        (idis)        
+7
+# number of subintervals for r   (nsubr)
+20
+# number of Gauss points in sub  (ngaur)
+500
+# PAR1
+2.5000
+# PAR2
+5.5
+# PAR3
+1.0
+#
+#
+############################################################
+#                      sixe distrib.
+# idist                        PAR1        PAR2        PAR3
+# ----------------------------------------------------------
+#  0   no distribution         r           -           -
+#  1   two parameter gamma     alpha       b           -
+#  2   two parameter gamma     reff        veff        -
+#  3   bimodal gamma           reff1       reff2       veff
+#  4   log normal              rg          sigma       -
+#  5   log normal              reff        veff        -
+#  6   power law               alpha       rmin        rmax
+#  7   modified gamma          alpha       rc          gamma
+#  8   modified gamma          alpha       b           gamma
+
+
